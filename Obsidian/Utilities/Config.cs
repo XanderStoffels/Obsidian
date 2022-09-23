@@ -47,7 +47,7 @@ public class ServerConfiguration : IServerConfiguration
 #if DEBUG
     public LogLevel LogLevel { get; set; } = LogLevel.Debug;
 #else
-        public LogLevel LogLevel { get; set; }  = LogLevel.Information;
+    public LogLevel LogLevel { get; set; } = LogLevel.Information;
 #endif
 
     public bool DebugMode;

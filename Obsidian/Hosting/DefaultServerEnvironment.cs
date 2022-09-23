@@ -39,7 +39,7 @@ public sealed class DefaultServerEnvironment : IServerEnvironment
             await server.ExecuteCommand(input);
         }
     }
-     
+
     Task IServerEnvironment.OnServerStoppedGracefullyAsync(ILogger logger)
     {
         logger.LogInformation("Goodbye!");

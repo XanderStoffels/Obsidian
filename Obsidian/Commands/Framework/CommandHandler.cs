@@ -204,7 +204,7 @@ public class CommandHandler
                 await ctx.Sender.SendMessageAsync(ChatMessage.Simple(ex.Message, ChatColor.Red));
                 break;
         }
-    } 
+    }
 
     private async Task ExecuteCommand(string[] command, CommandContext ctx)
     {

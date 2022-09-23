@@ -84,8 +84,8 @@ public sealed class RconServer
         keyGen.Init(kgp);
         var keyPair = keyGen.GenerateKeyPair();
 
-        return new InitData(server, 
-            _cmdHandler, 
+        return new InitData(server,
+            _cmdHandler,
             password,
             _config.Rcon.RequireEncryption,
             dhParameters,

@@ -80,7 +80,7 @@ public partial class Server : IServer
     /// Creates a new instance of <see cref="Server"/>.
     /// </summary>
     public Server(
-        IHostApplicationLifetime lifetime, 
+        IHostApplicationLifetime lifetime,
         IServerEnvironment environment,
         ILogger<Server> logger,
         RconServer rconServer)
@@ -282,7 +282,7 @@ public partial class Server : IServer
 
         if (Configuration.EnableRcon)
             serverTasks.Add(_rconServer.RunAsync(this, _cancelTokenSource.Token));
-        
+
         loadTimeStopwatch.Stop();
         _logger.LogInformation("Server loaded in {time}", loadTimeStopwatch.Elapsed);
         _logger.LogInformation("Listening for new clients...");
